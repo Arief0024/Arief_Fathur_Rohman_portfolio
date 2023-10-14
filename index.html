@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Arief TailwindCSS</title>
+    <title>Portofolio Arief</title>
     <link href="dist/output.css" rel="stylesheet" />
     <script>
       if (
@@ -26,8 +26,8 @@
         <div class="flex items-center justify-between relative">
           <div class="px-4">
             <a href="#home" class="font-bold text-lg text-primary block py-6"
-              >Arief Fathur Rohman</a
-            >
+              >Portfolio | Arief Fathur Rohman
+            </a>
           </div>
           <div class="flex items-center px-4">
             <button
@@ -163,17 +163,16 @@
               <span
                 class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-120"
               >
+              
+ 
+</svg>
                 <svg
                   width="400"
                   height="400"
                   viewBox="0 0 200 200"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    fill="#14b8a6"
-                    d="M17.7,-18.6C30.7,-19.1,54.6,-27.5,69,-23.5C83.3,-19.5,88.1,-3,84.7,11.3C81.2,25.6,69.6,37.9,56.7,44.6C43.9,51.4,29.8,52.6,19.3,47.1C8.9,41.5,1.9,29.3,-12.4,30.4C-26.7,31.6,-48.4,46.2,-60.3,45.2C-72.2,44.2,-74.2,27.6,-64.9,16.3C-55.6,5.1,-35,-0.7,-28.2,-11.8C-21.5,-22.9,-28.6,-39.2,-26.2,-43.6C-23.8,-48.1,-11.9,-40.6,-4.8,-33.1C2.3,-25.6,4.6,-18.1,17.7,-18.6Z"
-                    transform="translate(100 100) scale(1.0)"
-                  />
+                   <path fill="#6D28D9" d="M36.2,-49.9C41.7,-38.5,37.4,-22.2,41.3,-6.4C45.1,9.4,57.1,24.6,55.9,37.5C54.7,50.3,40.3,60.8,27.9,56.5C15.5,52.3,5.1,33.4,-12.5,29.2C-30.2,25,-55,35.6,-64.8,31.3C-74.5,27,-69.1,7.9,-57.1,-1.4C-45.1,-10.7,-26.6,-10.2,-16,-20.7C-5.4,-31.3,-2.7,-52.9,6.3,-60.4C15.3,-68,30.7,-61.4,36.2,-49.9Z" transform="translate(100 100) scale(1.0)" />
                 </svg>
               </span>
             </div>
@@ -210,8 +209,7 @@
               Ayo ikuti saya!!
             </h3>
             <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
-              untuk membantu komunikasi diantara kita, anda bisa mengikuti saya
-              di..
+              untuk membantu berkomunikasi, anda bisa mengikuti saya di..
             </p>
             <div class="flex items-center">
               <!-- instagram -->
@@ -508,7 +506,7 @@
                   <a
                     href="#"
                     class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white"
-                    >Tips belajar programming</a
+                    >Mengenal UI/UX Design</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-4">
@@ -570,7 +568,7 @@
                   <a
                     href="#"
                     class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white"
-                    >Tips belajar programming</a
+                    >Cyber Security</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-6">
@@ -603,21 +601,22 @@
               Hubungi Kami
             </h2>
             <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              assumenda.
+              Jika anda tertarik untuk bekerja sama dengan saya. anda dapat
+              menghubungi saya dengan mengisi form dibawah ini.
             </p>
           </div>
         </div>
 
-        <form>
+        <form action="https://formspree.io/f/moqoynqj" method="POST">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base font-bold text-primary"
+              <label for="full-name" class="text-base font-bold text-primary"
                 >Nama</label
               >
               <input
                 type="text"
-                id="name"
+                id="full-name"
+                name="full-name"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
@@ -628,6 +627,18 @@
               <input
                 type="email"
                 id="email"
+                name="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="Subject" class="text-base font-bold text-primary"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="Subject"
+                name="Subject"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
@@ -636,13 +647,15 @@
                 >Pesan</label
               >
               <textarea
-                type="email"
-                id="email"
+                type="text"
+                id="message"
+                name="message"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
+                type="submit"
                 class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
               >
                 Kirim
