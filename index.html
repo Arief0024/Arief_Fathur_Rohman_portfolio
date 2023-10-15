@@ -145,9 +145,21 @@
               >
             </p>
 
+<button class="text-base bg-blue-500 font-semibold bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full mb-4 md:w-auto" onclick="openPDF()">Download CV</button>
+
+    <script>
+        function openPDF() {
+            // Ganti URL berikut dengan URL file PDF yang ingin Anda tampilkan
+            var pdfURL = '/dist/Arief.pdf';
+            
+            // Buka file PDF di jendela baru
+            window.open(pdfURL, '_blank');
+        }
+    </script>
+
             <a
               href="/dist/Arief.pdf"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              class="text-base font-semibold text-white dark:bg-dark dark:text-dark  py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mx-auto max-w-xl"
               target="_blank"
             >
               Download CV</a
